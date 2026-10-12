@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+/*
+  Placeholder theme: white background, black / navy / gray text.
+  Swap these values once the visual identity is decided.
+*/
+@theme {
+  --color-page: #ffffff;
+  --color-ink: #111111;
+  --color-navy: #1b2a4a;
+  --color-muted: #6b7280;
+  --color-line: #e5e7eb;
+
+  --font-display: "Cormorant SC", Georgia, serif;
+  --font-serif: "Source Serif 4 Variable", Georgia, "Times New Roman", serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  background: var(--color-page);
+  color: var(--color-ink);
+  font-family: var(--font-serif);
+}
